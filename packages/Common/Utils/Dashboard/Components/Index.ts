@@ -7,6 +7,7 @@ import DashboardCephOsdListComponentUtil from "./DashboardCephOsdListComponent";
 import DashboardCephPoolListComponentUtil from "./DashboardCephPoolListComponent";
 import DashboardChartComponentUtil from "./DashboardChartComponent";
 import DashboardClockComponentUtil from "./DashboardClockComponent";
+import DashboardCustomComponentUtil from "./DashboardCustomComponent";
 import DashboardDataSourceChartComponentUtil from "./DashboardDataSourceChartComponent";
 import DashboardDataSourceGaugeComponentUtil from "./DashboardDataSourceGaugeComponent";
 import DashboardDataSourceTableComponentUtil from "./DashboardDataSourceTableComponent";
@@ -393,6 +394,12 @@ export default class DashboardComponentsUtil {
 
     if (dashboardComponentType === DashboardComponentType.Html) {
       return DashboardHtmlComponentUtil.getComponentConfigArguments() as Array<
+        ComponentArgument<DashboardBaseComponent>
+      >;
+    }
+
+    if (dashboardComponentType === DashboardComponentType.Custom) {
+      return DashboardCustomComponentUtil.getComponentConfigArguments() as Array<
         ComponentArgument<DashboardBaseComponent>
       >;
     }

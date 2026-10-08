@@ -70,6 +70,7 @@ import DashboardStorageArrayVolumeListComponentUtil from "Common/Utils/Dashboard
 import DashboardStorageArrayHardwareListComponentUtil from "Common/Utils/Dashboard/Components/DashboardStorageArrayHardwareListComponent";
 import DashboardNetworkMapComponentUtil from "Common/Utils/Dashboard/Components/DashboardNetworkMapComponent";
 import DashboardHtmlComponentUtil from "Common/Utils/Dashboard/Components/DashboardHtmlComponent";
+import DashboardCustomComponentUtil from "Common/Utils/Dashboard/Components/DashboardCustomComponent";
 import BadDataException from "Common/Types/Exception/BadDataException";
 import ObjectID from "Common/Types/ObjectID";
 import Dashboard from "Common/Models/DatabaseModels/Dashboard";
@@ -1001,6 +1002,10 @@ const DashboardViewer: FunctionComponent<ComponentProps> = (
 
           if (componentType === DashboardComponentType.Html) {
             newComponent = DashboardHtmlComponentUtil.getDefaultComponent();
+          }
+
+          if (componentType === DashboardComponentType.Custom) {
+            newComponent = DashboardCustomComponentUtil.getDefaultComponent();
           }
 
           if (!newComponent) {

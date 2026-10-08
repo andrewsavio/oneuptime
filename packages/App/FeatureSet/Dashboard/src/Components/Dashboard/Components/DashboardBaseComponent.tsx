@@ -58,6 +58,7 @@ import DashboardStorageArrayVolumeListComponent from "./DashboardStorageArrayVol
 import DashboardStorageArrayHardwareListComponent from "./DashboardStorageArrayHardwareListComponent";
 import DashboardNetworkMapComponent from "./DashboardNetworkMapComponent";
 import DashboardHtmlComponent from "./DashboardHtmlComponent";
+import DashboardCustomComponent from "./DashboardCustomComponent";
 import { GetReactElementFunction } from "Common/UI/Types/FunctionTypes";
 import DashboardViewConfig from "Common/Types/Dashboard/DashboardViewConfig";
 import ObjectID from "Common/Types/ObjectID";
@@ -208,6 +209,7 @@ const WIDGET_BY_TYPE: Partial<
     DashboardStorageArrayHardwareListComponent,
   [DashboardComponentType.NetworkMap]: DashboardNetworkMapComponent,
   [DashboardComponentType.Html]: DashboardHtmlComponent,
+  [DashboardComponentType.Custom]: DashboardCustomComponent,
 };
 
 interface ResizeHandleSpec {

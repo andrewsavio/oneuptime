@@ -204,6 +204,33 @@ export const WIDGET_CATALOG: ReadonlyArray<WidgetCatalogCategory> = [
     ],
   },
   {
+    name: "Custom",
+    group: WidgetCategoryGroup.General,
+    icon: IconProp.Wrench,
+    description:
+      "Pick the data source and the visualization separately, instead of taking them as a pair.",
+    items: [
+      {
+        type: DashboardComponentType.Custom,
+        label: "Custom Widget",
+        icon: IconProp.Wrench,
+        description:
+          "Monitors, incidents, or alerts, drawn as a table, a stat, or a bar chart — any source with any visualization.",
+        keywords: [
+          "blank",
+          "mix",
+          "data source",
+          "visualization",
+          "monitors",
+          "incidents",
+          "alerts",
+          "stat",
+          "bar",
+        ],
+      },
+    ],
+  },
+  {
     name: "Logs",
     group: WidgetCategoryGroup.Observability,
     icon: IconProp.Logs,

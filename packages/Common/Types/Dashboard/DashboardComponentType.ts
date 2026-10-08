@@ -59,6 +59,7 @@ enum DashboardComponentType {
   StorageArrayHardwareList = `StorageArrayHardwareList`,
   NetworkMap = `NetworkMap`,
   Html = `Html`,
+  Custom = `Custom`,
 }
 
 export default DashboardComponentType;

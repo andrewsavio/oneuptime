@@ -265,7 +265,7 @@ describe("External Data Sources widget catalog category", () => {
         general?.categories.map((category: WidgetCatalogCategory) => {
           return category.name;
         }),
-      ).toEqual(["Essentials", "Metrics", EXTERNAL_CATEGORY_NAME]);
+      ).toEqual(["Essentials", "Metrics", EXTERNAL_CATEGORY_NAME, "Custom"]);
     });
 
     test("collapses to a single General section when a search leaves only this category", () => {

@@ -24,6 +24,7 @@ import DashboardDockerVolumeListComponentUtil from "../../../../Utils/Dashboard/
 import DashboardGaugeComponentUtil from "../../../../Utils/Dashboard/Components/DashboardGaugeComponent";
 import DashboardHostListComponentUtil from "../../../../Utils/Dashboard/Components/DashboardHostListComponent";
 import DashboardHtmlComponentUtil from "../../../../Utils/Dashboard/Components/DashboardHtmlComponent";
+import DashboardCustomComponentUtil from "../../../../Utils/Dashboard/Components/DashboardCustomComponent";
 import DashboardIncidentListComponentUtil from "../../../../Utils/Dashboard/Components/DashboardIncidentListComponent";
 import DashboardKubernetesCronJobListComponentUtil from "../../../../Utils/Dashboard/Components/DashboardKubernetesCronJobListComponent";
 import DashboardKubernetesDaemonSetListComponentUtil from "../../../../Utils/Dashboard/Components/DashboardKubernetesDaemonSetListComponent";
@@ -166,6 +167,7 @@ const TYPE_TO_UTIL: Record<DashboardComponentType, ComponentUtil> = {
     DashboardStorageArrayHardwareListComponentUtil,
   [DashboardComponentType.NetworkMap]: DashboardNetworkMapComponentUtil,
   [DashboardComponentType.Html]: DashboardHtmlComponentUtil,
+  [DashboardComponentType.Custom]: DashboardCustomComponentUtil,
 };
 
 const ALL_TYPES: Array<DashboardComponentType> = Object.values(
